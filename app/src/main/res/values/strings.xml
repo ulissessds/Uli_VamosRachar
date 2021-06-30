@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Vamos Rachar!</string>
+    <string name="app_logo">Vamos\nRachar!</string>
+    <string name="cifrao">R$</string>
+    <string name="valorInicial">0.00</string>
+    <string name="totalPlaceholder">Total da conta</string>
+    <string name="grupoPlaceholder">Número de pessoas</string>
+    <string name="msgIndividual">Cada um vai pagar</string>
+</resources>
