@@ -11,6 +11,7 @@ import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
 import com.google.android.material.floatingactionbutton.FloatingActionButton
+import java.lang.StringBuilder
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,7 +23,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val rachada = ContaRachada()
-        val cifrao: String = getString(R.string.cifrao) + " "
+        val cifrao: String = buildString {
+            append(getString(R.string.cifrao))
+            append(" ")
+        }
         val valorInicial: String = getString(R.string.valorInicial)
 
         val contaInput: EditText = findViewById(R.id.contaInput)
@@ -44,7 +48,12 @@ class MainActivity : AppCompatActivity() {
         }
 
         shareBTN.setOnClickListener {
-            val msg = "O valor da conta dividida por pessoa deu " + cifrao + rachada.rachaConta()
+            val msg = buildString {
+                append(getString(R.string.share_msg))
+                append(" ")
+                append(cifrao)
+                append(rachada.rachaConta())
+            }
             Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
             val intent = Intent(Intent.ACTION_SEND)
             "text/plain".also { intent.type = it }
@@ -92,7 +101,13 @@ class MainActivity : AppCompatActivity() {
         mTTS = TextToSpeech(applicationContext, TextToSpeech.OnInitListener{})
 
         speakBTN.setOnClickListener {
-            val fala = "O valor da conta dividida por pessoa deu " + rachada.rachaConta() + " reais"
+            val fala = buildString {
+                append(getString(R.string.share_msg))
+                append(" ")
+                append(rachada.rachaConta())
+                append(" ")
+                append(getString(R.string.cifrao_msg))
+            }
             Toast.makeText(this, fala, Toast.LENGTH_SHORT).show()
             mTTS.speak(fala, TextToSpeech.QUEUE_FLUSH, null)
         }

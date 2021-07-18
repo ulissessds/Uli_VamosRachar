@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Split the Bill!</string>
+    <string name="app_logo">Split \nthe Bill!</string>
+    <string name="cifrao">US$</string>
+    <string name="valorInicial">0.00</string>
+    <string name="totalPlaceholder">Billing total</string>
+    <string name="grupoPlaceholder">Number of people</string>
+    <string name="msgIndividual">Each one will pay</string>
+
+    <string name="descript_total">Money bill</string>
+    <string name="descript_pessoas">Group of people</string>
+    <string name="descript_share">Share result</string>
+    <string name="descript_tts">Speak Result</string>
+    <string name="share_msg">The paying amount divided by person is</string>
+    <string name="cifrao_msg">dollars</string>
+</resources>

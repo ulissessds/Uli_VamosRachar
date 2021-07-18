@@ -6,4 +6,11 @@
     <string name="totalPlaceholder">Total da conta</string>
     <string name="grupoPlaceholder">Número de pessoas</string>
     <string name="msgIndividual">Cada um vai pagar</string>
+
+    <string name="descript_total">Cédula de dinheiro</string>
+    <string name="descript_pessoas">Grupo de pessoas</string>
+    <string name="descript_share">Compartilhar resultado</string>
+    <string name="descript_tts">Falar resultado</string>
+    <string name="share_msg">O valor da conta dividida por pessoa deu</string>
+    <string name="cifrao_msg">reais</string>
 </resources>

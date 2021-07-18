@@ -12,9 +12,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="-20dp"
+        android:scaleX="1"
+        android:scaleY="1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.060000002"
@@ -23,15 +25,17 @@
 
     <TextView
         android:id="@+id/app_logo"
-        android:layout_width="wrap_content"
+        android:layout_width="257dp"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
+        android:scaleX="1"
+        android:scaleY="1"
         android:text="@string/app_logo"
         android:textAlignment="viewStart"
         android:textColor="@color/pizza_white"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="@+id/app_icon"
-        app:layout_constraintStart_toEndOf="@+id/app_icon"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/app_icon" />
 
     <TableRow
@@ -39,7 +43,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="@+id/app_icon"
+        android:scaleX="1"
+        android:scaleY="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/app_icon">
 
         <ImageButton
@@ -49,6 +56,8 @@
             android:layout_marginTop="24dp"
             android:backgroundTint="@color/pizza_green"
             android:contentDescription="@string/descript_total"
+            android:scaleX="1"
+            android:scaleY="1"
             app:srcCompat="@drawable/ic_real" />
 
         <EditText
@@ -60,6 +69,8 @@
             android:hint="@string/totalPlaceholder"
             android:importantForAutofill="no"
             android:inputType="numberDecimal"
+            android:scaleX="1"
+            android:scaleY="1"
             android:textColor="@color/pizza_white"
             android:textColorHint="@color/pizza_gray"
             android:textSize="24sp"
@@ -71,7 +82,10 @@
         android:id="@+id/tableRow2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="@+id/tableRow"
+        android:scaleX="1"
+        android:scaleY="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tableRow">
 
         <ImageButton
@@ -81,6 +95,8 @@
             android:layout_marginTop="24dp"
             android:backgroundTint="@color/pizza_purple"
             android:contentDescription="@string/descript_pessoas"
+            android:scaleX="1"
+            android:scaleY="1"
             app:srcCompat="@drawable/ic_grupo" />
 
         <EditText
@@ -92,6 +108,8 @@
             android:hint="@string/grupoPlaceholder"
             android:importantForAutofill="no"
             android:inputType="number"
+            android:scaleX="1"
+            android:scaleY="1"
             android:textColor="@color/pizza_white"
             android:textColorHint="@color/pizza_gray"
             android:textSize="24sp"
@@ -104,6 +122,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:scaleX="1"
+        android:scaleY="1"
         android:text="@string/msgIndividual"
         android:textColor="@color/pizza_gray"
         android:textSize="20sp"
@@ -115,6 +135,9 @@
         android:id="@+id/resultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:scaleX="1"
+        android:scaleY="1"
         android:textColor="@color/pizza_white"
         android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -125,13 +148,13 @@
         android:id="@+id/shareBTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="8dp"
         android:clickable="true"
         android:contentDescription="@string/descript_share"
         android:focusable="true"
         android:scaleType="center"
-        android:scaleX="1.1"
-        android:scaleY="1.1"
+        android:scaleX="1"
+        android:scaleY="1"
         app:backgroundTint="@color/pizza_lightBlack"
         app:fabSize="auto"
         app:layout_constraintEnd_toStartOf="@+id/speakBTN"
@@ -145,13 +168,13 @@
         android:id="@+id/speakBTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="8dp"
         android:clickable="true"
         android:contentDescription="@string/descript_tts"
         android:focusable="true"
         android:scaleType="center"
-        android:scaleX="1.1"
-        android:scaleY="1.1"
+        android:scaleX="1"
+        android:scaleY="1"
         app:backgroundTint="@color/pizza_lightBlack"
         app:fabSize="auto"
         app:layout_constraintEnd_toEndOf="parent"
